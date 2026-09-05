@@ -1083,5 +1083,154 @@ body * {
     color: white;
     transform: scale(1.08);
 }
+/* =========================
+   UBICACIÓN
+========================= */
 
+.ubicacion {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 25px;
+}
+
+/* TÍTULO */
+
+.ubicacion-titulo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.ubicacion-titulo h2 {
+    font-size: 36px;
+    color: #111;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.ubicacion-titulo h2 span {
+    color: #ff5a00;
+}
+
+.ubicacion-titulo p {
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* CONTENEDOR */
+
+.ubicacion-contenedor {
+    display: grid;
+    grid-template-columns: 0.9fr 1.5fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+/* INFORMACIÓN */
+
+.ubicacion-info {
+    background: #111;
+    color: white;
+    padding: 40px 35px;
+    border-radius: 20px;
+    border-left: 7px solid #ff5a00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ubicacion-info h3 {
+    color: #ff5a00;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* DATOS */
+
+.dato-ubicacion {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.dato-ubicacion span {
+    font-size: 23px;
+}
+
+.dato-ubicacion p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* BOTÓN MAPA */
+
+.boton-mapa {
+    display: inline-block;
+    background: #ff5a00;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 30px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton-mapa:hover {
+    background: white;
+    color: #111;
+    transform: scale(1.04);
+}
+
+/* MAPA */
+
+.mapa {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    border: 3px solid #111;
+}
+
+.mapa iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+}
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    .ubicacion {
+        padding: 0 15px;
+        margin: 45px auto;
+    }
+
+    .ubicacion-titulo h2 {
+        font-size: 28px;
+    }
+
+    .ubicacion-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .ubicacion-info {
+        padding: 30px 25px;
+    }
+
+    .ubicacion-info h3 {
+        font-size: 26px;
+    }
+
+    .mapa iframe {
+        min-height: 350px;
+    }
+}
     </style>
