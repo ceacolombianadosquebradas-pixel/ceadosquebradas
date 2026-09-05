@@ -1,0 +1,2663 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CEA Colombiana Dosquebradas | Escuela de Conducción</title>
+
+    <meta name="description"
+        content="CEA Colombiana Dosquebradas. Escuela de conducción para formación en licencias A2, B1 y C1. Aprende a conducir con confianza.">
+
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- URL PRINCIPAL DE LA PÁGINA -->
+    <link rel="canonical"
+        href="https://ceacolombianadosquebradas-pixel.github.io/">
+
+    <!-- NOMBRE DEL SITIO PARA GOOGLE -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "CEA Colombiana Dosquebradas",
+        "alternateName": "CEA Colombiana",
+        "url": "https://ceacolombianadosquebradas-pixel.github.io/"
+    }
+    </script>
+    <style>
+body * {
+    font-weight: bold;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        /* BARRA DE NAVEGACIÓN */
+
+        header {
+            background-color: #111;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+            z-index: 100;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .nombre {
+            color: white;
+            margin-left: 12px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nombre span {
+            color: #ff5a00;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff5a00;
+        }
+
+        /* INICIO */
+
+        .inicio {
+    min-height: 600px;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.70),
+        rgba(0,0,0,0.70)
+    ),
+    url("fondoCEA.png");
+
+    background-size: cover;
+    background-position: center;
+}
+            padding: 40px 20px;
+        }
+
+        .inicio-contenido {
+            color: white;
+            max-width: 800px;
+        }
+.inicio h1 {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.inicio h1 span {
+    color: #ff5a00;
+}
+
+.inicio p {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+        .boton {
+            display: inline-block;
+            background-color: #ff5a00;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #e64d00;
+            transform: scale(1.05);
+        }
+
+        /* SECCIONES */
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .titulo h2 {
+            font-size: 35px;
+            color: #111;
+        }
+
+        .titulo h2 span {
+            color: #ff5a00;
+        }
+
+        .titulo p {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        /* NOSOTROS */
+
+        .nosotros {
+            background-color: white;
+        }
+
+        .nosotros-contenido {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .nosotros-texto {
+            flex: 1;
+        }
+
+        .nosotros-texto h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .nosotros-texto p {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .nosotros-logo {
+            flex: 1;
+            text-align: center;
+        }
+
+   .nosotros-logo img {
+    width: 500px;
+    border-radius: 20px;
+}
+.titulo-cea {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.titulo-cea span {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+/* CEA EN BLANCO SOBRE FONDO NEGRO */
+.cea-blanco {
+    color: white;
+    background-color: #111;
+}
+
+/* COLOMBIANA EN NARANJA */
+.cea-naranja {
+    color: #ff5a00;
+}
+
+/* DOSQUEBRADAS EN NEGRO */
+.cea-negro {
+    color: #111;
+}
+
+        /* SERVICIOS */
+
+        .servicios {
+            background-color: #f5f5f5;
+        }
+
+        .tarjetas {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .tarjeta {
+            background-color: white;
+            width: 300px;
+            padding: 35px 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+            transition: 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+        }
+
+        .icono {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta h3 {
+            margin-bottom: 12px;
+            color: #111;
+        }
+
+        .tarjeta p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* CONTACTO */
+
+        .contacto {
+            background-color: #111;
+            color: white;
+            text-align: center;
+        }
+
+        .contacto .titulo h2 {
+            color: white;
+        }
+
+        .contacto p {
+            margin: 12px;
+            font-size: 18px;
+        }
+
+        .contacto-info {
+            margin-top: 30px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #050505;
+            color: #aaa;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer span {
+            color: #ff5a00;
+        }
+
+        /* CELULARES */
+
+        @media (max-width: 768px) {
+
+            header {
+                height: auto;
+                padding: 15px;
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .inicio h1 {
+                font-size: 38px;
+            }
+
+            .inicio p {
+                font-size: 17px;
+            }
+
+            .nosotros-contenido {
+                flex-direction: column;
+            }
+        }
+/* =========================
+   LICENCIAS
+========================= */
+
+.licencias {
+    background-color: #f5f5f5;
+    padding: 70px 5%;
+    text-align: center;
+}
+
+.titulo-licencias h2 {
+    font-size: 35px;
+    color: #111;
+    margin-bottom: 40px;
+}
+
+.licencias-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.licencia {
+    background-color: white;
+    width: 31%;
+    min-width: 280px;
+    min-height: 500px;
+    padding: 25px 30px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.licencia:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.licencia h3 {
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.licencia h4 {
+    font-size: 25px;
+    color: #ff5a00;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.licencia img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin: 10px 0;
+}
+
+.linea {
+    width: 80%;
+    height: 2px;
+    background-color: #ff5a00;
+    margin: 15px auto 25px;
+}
+
+.licencia p {
+    color: #344054;
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* CELULARES */
+
+@media (max-width: 768px) {
+
+    .licencia {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .licencias-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+/* =================================
+   ¿POR QUÉ ELEGIRNOS?
+================================= */
+
+.porque-elegirnos {
+    background-color: #f5f5f5;
+    padding: 55px 4%;
+}
+
+.porque-contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 45px;
+}
+
+
+/* COLUMNA IZQUIERDA */
+
+.porque-izquierda {
+    width: 48%;
+}
+
+.porque-izquierda h2 {
+    font-size: 32px;
+    color: #111;
+    margin: 0 0 25px 0;
+    text-align: left;
+}
+
+.porque-izquierda h2 span {
+    color: #ff5a00;
+}
+
+
+/* BENEFICIOS */
+
+.beneficios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 45px;
+    row-gap: 28px;
+}
+
+.beneficio {
+    text-align: center;
+}
+
+.beneficio-icono {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 10px;
+
+    background-color: #111;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                background-color 0.3s ease;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.beneficio-icono:hover {
+    transform: scale(1.18);
+
+    background-color: #ff5a00;
+
+    box-shadow: 0 0 20px rgba(255, 90, 0, 0.5);
+}
+
+.beneficio p {
+    margin: 0;
+    color: #333;
+
+    font-size: 14px;
+    line-height: 1.25;
+}
+
+
+/* IMAGEN DERECHA */
+
+.porque-derecha {
+    width: 52%;
+}
+
+.porque-derecha img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    display: block;
+}
+
+
+/* =================================
+   CELULARES
+================================= */
+
+@media (max-width: 768px) {
+
+    .porque-contenedor {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .porque-izquierda,
+    .porque-derecha {
+        width: 100%;
+    }
+
+    .porque-izquierda h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .beneficios {
+        column-gap: 20px;
+        row-gap: 25px;
+    }
+
+    .porque-derecha img {
+        height: 400px;
+    }
+
+}
+/* =========================
+   AVISO DE COOKIES
+========================= */
+
+.aviso-cookies {
+    position: fixed;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 90%;
+    max-width: 950px;
+
+    background-color: #111;
+
+    color: white;
+
+    padding: 22px 25px;
+
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+
+    z-index: 9999;
+
+    border-top: 4px solid #ff5a00;
+
+    animation: aparecerCookies 0.5s ease;
+}
+
+
+/* ICONO */
+
+.cookies-icono {
+    width: 55px;
+    height: 55px;
+
+    min-width: 55px;
+
+    background-color: #ff5a00;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+}
+
+
+/* TEXTO */
+
+.cookies-texto {
+    flex: 1;
+}
+
+.cookies-texto h3 {
+    margin: 0 0 7px;
+
+    color: #ff5a00;
+
+    font-size: 20px;
+}
+
+.cookies-texto p {
+    margin: 0 0 7px;
+
+    color: #ddd;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.cookies-texto a {
+    color: white;
+
+    font-size: 13px;
+
+    text-decoration: underline;
+}
+
+.cookies-texto a:hover {
+    color: #ff5a00;
+}
+
+
+/* BOTONES */
+
+.cookies-botones {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    min-width: 160px;
+}
+
+.cookies-botones button {
+    border: none;
+
+    padding: 11px 18px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* ACEPTAR */
+
+.btn-aceptar {
+    background-color: #ff5a00;
+
+    color: white;
+}
+
+.btn-aceptar:hover {
+    background-color: white;
+
+    color: #111;
+
+    transform: scale(1.05);
+}
+
+
+/* RECHAZAR */
+
+.btn-rechazar {
+    background-color: transparent;
+
+    color: white;
+
+    border: 1px solid white !important;
+}
+
+.btn-rechazar:hover {
+    background-color: white;
+
+    color: #111;
+}
+
+
+/* ANIMACIONES */
+
+@keyframes aparecerCookies {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateX(-50%)
+            translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateX(-50%)
+            translateY(0);
+    }
+
+}
+
+
+.aviso-cookies.ocultar {
+
+    opacity: 0;
+
+    transform:
+        translateX(-50%)
+        translateY(30px);
+
+    transition: 0.4s ease;
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    .aviso-cookies {
+
+        width: 94%;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 20px;
+
+        bottom: 10px;
+    }
+
+    .cookies-botones {
+
+        width: 100%;
+
+        flex-direction: row;
+
+    }
+
+    .cookies-botones button {
+
+        flex: 1;
+
+    }
+
+}
+/* =========================
+   HORARIOS
+========================= */
+
+.horarios {
+    background-color: #f5f5f5;
+    padding: 70px 5%;
+}
+
+.horarios-contenedor {
+    max-width: 1050px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.horarios-contenedor h2 {
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.horarios-contenedor h2::after {
+    content: "";
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    background-color: #ff5a00;
+
+    margin: 12px auto 20px;
+
+    border-radius: 10px;
+}
+
+.horarios-intro {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+
+/* TARJETAS */
+
+.horarios-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.horario-tarjeta {
+    background-color: white;
+
+    width: 280px;
+
+    padding: 30px 20px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.10);
+
+    border-top: 5px solid #ff5a00;
+
+    transition: 0.3s;
+}
+
+.horario-tarjeta:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+
+/* ICONO */
+
+.horario-icono {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 15px;
+
+    background-color: #111;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+    transition: 0.3s;
+}
+
+.horario-tarjeta:hover .horario-icono {
+    background-color: #ff5a00;
+
+    transform: scale(1.12);
+}
+
+
+/* TEXTO */
+
+.horario-tarjeta h3 {
+    color: #ff5a00;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.horario-tarjeta p {
+    color: #333;
+    font-size: 16px;
+    margin: 7px 0;
+}
+
+
+/* CERRADO */
+
+.horario-tarjeta.cerrado {
+    border-top-color: #111;
+}
+
+.horario-tarjeta.cerrado h3 {
+    color: #111;
+}
+
+
+/* CONTACTO */
+
+.horarios-contacto {
+    margin-top: 40px;
+
+    background-color: #111;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    color: white;
+}
+
+.horarios-contacto p {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.horarios-contacto a {
+    display: inline-block;
+
+    background-color: #ff5a00;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+.horarios-contacto a:hover {
+    background-color: white;
+    color: #111;
+
+    transform: scale(1.06);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    .horarios {
+        padding: 50px 15px;
+    }
+
+    .horarios-contenedor h2 {
+        font-size: 27px;
+    }
+
+    .horario-tarjeta {
+        width: 100%;
+        max-width: 330px;
+    }
+
+}
+            /* BARRA SUPERIOR DE ANUNCIO CON BOTÓN VERDE */
+        .barra-superior {
+            background-color: #111111; /* Fondo negro elegante */
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 2000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .btn-top-wsp {
+            background-color: #25D366; /* Verde oficial de WhatsApp */
+            color: white;
+            text-decoration: none;
+            padding: 6px 16px;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .btn-top-wsp:hover {
+            background-color: #128C7E; /* Verde más oscuro al pasar el mouse */
+            transform: scale(1.05); /* Efecto de crecimiento interactivo */
+        }
+        /* SECCIÓN LICENCIAS */
+        .seccion-licencias {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .seccion-licencias h2 {
+            font-size: 2rem;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .seccion-licencias h2 span {
+            color: #FF6600;
+        }
+        .grid-licencias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+        .tarjeta-licencia {
+            background: #ffffff;
+            border: 2px solid #e0e0e0;
+            padding: 30px 20px;
+            border-radius: 8px;
+            width: 290px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .tarjeta-licencia:hover {
+            transform: translateY(-5px);
+            border-color: #FF6600;
+        }
+        .tarjeta-licencia h3 {
+            font-size: 2.2rem;
+            color: #111111;
+            margin-bottom: 5px;
+        }
+        .tarjeta-licencia .categoria-sub {
+            color: #FF6600;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .tarjeta-licencia p {
+            font-size: 0.95rem;
+            color: #555555;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+.licencias-whatsapp {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.licencias-whatsapp p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.licencias-whatsapp a {
+    display: inline-block;
+    background-color: #ff5a00;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.licencias-whatsapp a:hover {
+    background-color: #111;
+    color: white;
+    transform: scale(1.08);
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+
+    <header>
+
+        <div class="logo">
+
+           <img src="ceadosquebradas.jpeg" width="300" height="300">
+
+            <div class="nombre">
+                CEA <span>COLOMBIANA DOSQUEBRADAS</span>
+            </div>
+
+        </div>
+
+        <nav>
+		    <!-- BARRA SUPERIOR DE CONTACTO INTERACTIVA -->
+    <div class="barra-superior">
+        <span> ¡Aprende a conducir con expertos!</span>
+        <a href="https://wa.me/573224279071" class="btn-top-wsp" target="_blank">
+            <!-- Usamos un ícono SVG nativo para que el logo de WhatsApp cargue al instante sin imágenes externas -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 11.966 0c3.178.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.239 3.48 8.421-.003 6.615-5.34 11.962-11.91 11.962-1.996-.001-3.959-.5-5.709-1.448L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.451 5.416 0 9.825-4.41 9.828-9.827.001-2.624-1.021-5.091-2.879-6.95-1.857-1.859-4.323-2.881-6.945-2.882-5.419 0-9.83 4.411-9.833 9.83-.001 1.637.43 3.235 1.252 4.66L1.69 21.135l4.957-1.3c1.382.753 2.877 1.319 4.322 1.319zm11.164-6.381c-.267-.134-1.582-.781-1.827-.869-.244-.09-.423-.134-.599.134-.176.268-.68.869-.834 1.047-.154.179-.308.201-.575.067-.267-.134-1.127-.415-2.148-1.326-.793-.707-1.329-1.582-1.485-1.849-.156-.268-.017-.413.117-.547.121-.121.267-.313.401-.469.134-.156.179-.268.268-.446.089-.179.045-.335-.022-.469-.067-.134-.599-1.444-.821-1.98-.216-.52-.436-.45-.599-.459-.155-.008-.334-.01-.513-.01-.179 0-.472.067-.719.335-.246.268-.94 1.183-.94 2.884 0 1.701 1.237 3.348 1.41 3.572.173.223 2.436 3.72 5.899 5.212.823.356 1.467.568 1.968.727.828.263 1.582.226 2.177.137.663-.1 1.582-.647 1.804-1.27.222-.624.222-1.161.155-1.272-.067-.113-.244-.179-.512-.313z"/></svg>
+            Contactar ahora por WhatsApp
+        </a>
+    </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- INICIO -->
+
+    <section class="inicio" id="inicio">
+
+        <div class="inicio-contenido">
+
+            <h1>
+                Más que enseñarte a conducir,<span>¡te enseñamos a cuidar tu vida!</span>
+            </h1>
+
+            <p>
+                Escuela de enseñanza automovilística | Licencias de conduccion y Cursos
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOSOTROS -->
+
+    <section class="nosotros" id="nosotros">
+
+     
+
+        <div class="nosotros-contenido">
+
+            <div class="nosotros-texto">
+<div class="titulo-cea">
+    <span class="cea-blanco">CEA</span>
+    <span class="cea-naranja">COLOMBIANA</span>
+    <span class="cea-negro">DOSQUEBRADAS</span>
+</div>
+        <p>
+
+<p><center>¡TU CAMINO HACIA UNA CONDUCCIÓN SEGURA COMIENZA AQUÍ!</center></p>
+<p><center>Somos un Centro de Enseñanza Automovilística comprometido con formar conductores responsables, seguros y preparados para las vías.</center></p>
+
+            <div class="nosotros-logo">
+
+                <img src="fondocea.jpeg" alt="CEA Colombiana Dosquebradas">
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- =========================
+     HORARIOS
+========================= -->
+
+<section class="horarios" id="horarios">
+
+    <div class="horarios-contenedor">
+
+        <h2>Horarios de atención</h2>
+
+        <p class="horarios-intro">
+            Estamos disponibles para atenderte y brindarte
+            toda la información que necesitas.
+        </p>
+
+        <div class="horarios-tarjetas">
+
+            <!-- LUNES A VIERNES -->
+
+            <div class="horario-tarjeta">
+
+                <div class="horario-icono">
+                    🕐
+                </div>
+
+                <h3>Lunes a Viernes</h3>
+
+                <p>
+                    7:30 a. m. - 12:00 p. m.
+                </p>
+
+                <p>
+                    2:00 p. m. - 5:00 p. m.
+                </p>
+
+            </div>
+
+
+            <!-- SÁBADOS -->
+
+            <div class="horario-tarjeta">
+
+                <div class="horario-icono">
+                    🕐
+                </div>
+
+                <h3>Sábados</h3>
+
+                <p>
+                    7:30 a. m. - 12:00 p. m.
+                </p>
+
+            </div>
+
+
+            <!-- DOMINGOS -->
+
+            <div class="horario-tarjeta cerrado">
+
+                <div class="horario-icono">
+                    🕐
+                </div>
+
+                <h3>Domingos</h3>
+
+                <p>
+                    Cerrado
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="horarios-contacto">
+
+            <p>
+                ¿Tienes alguna pregunta?
+            </p>
+
+            <a href="https://wa.me/573224279071" target="_blank">
+                Consultar por WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- SERVICIOS -->
+
+    <section class="servicios" id="servicios">
+
+        <div class="titulo">
+
+            <h2>
+                Nuestros <span>Servicios</span>
+            </h2>
+
+            <p>
+                Formación para diferentes necesidades de conducción.
+            </p>
+
+        </div>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+
+                <div class="icono">
+                    🚗
+                </div>
+
+                <h3>
+                    Curso de Conducción
+                </h3>
+
+                <p>
+                    Aprende desde cero las técnicas necesarias
+                    para conducir de manera segura y responsable.
+                </p>
+
+            </div>
+
+
+            <div class="tarjeta">
+
+                <div class="icono">
+                    📚
+                </div>
+
+                <h3>
+                    Formación Teórica
+                </h3>
+
+                <p>
+                    Conoce las normas de tránsito, señales y
+                    conceptos fundamentales para conducir.
+                </p>
+
+            </div>
+
+
+            <div class="tarjeta">
+
+                <div class="icono">
+                    🛣️
+                </div>
+
+                <h3>
+                    Prácticas de Conducción
+                </h3>
+
+                <p>
+                    Pon en práctica tus conocimientos con
+                    acompañamiento durante tu proceso.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+<!-- LICENCIAS -->
+
+<section class="licencias" id="licencias">
+
+    <div class="titulo-licencias">
+        <h2>Licencias</h2>
+    </div>
+
+    <div class="licencias-contenedor">
+
+        <!-- B1 -->
+        <div class="licencia">
+
+            <h3>B1</h3>
+
+            <h4>Carro<br>particular</h4>
+
+            <img src="carro-b1.png" alt="Carro licencia B1">
+
+            <div class="linea"></div>
+
+            <p>
+                Permite conducir automóviles, motocicletas,
+                motocarros, camperos, camionetas y microbuses
+                de servicio particular.
+            </p>
+ <div class="licencias-whatsapp">
+
+    <a href="https://wa.me/573224279071" target="_blank">
+        💬 Consultar por WhatsApp
+    </a>
+</div>
+        </div>
+
+
+        <!-- A2 -->
+        <div class="licencia">
+
+            <h3>A2</h3>
+
+            <h4>Moto</h4>
+
+            <img src="moto-a2.png" alt="Moto licencia A2">
+
+            <div class="linea"></div>
+
+            <p>
+                Permite conducir motocicletas, motociclos
+                y mototriciclos con motor mayor a 125 cc.
+            </p>
+ <div class="licencias-whatsapp">
+
+    <a href="https://wa.me/573224279071" target="_blank">
+        💬 Consultar por WhatsApp
+    </a>
+</div>
+        </div>
+
+
+        <!-- C1 -->
+        <div class="licencia">
+
+            <h3>C1</h3>
+
+            <h4>Servicio<br>público</h4>
+
+            <img src="bus-c1.png" alt="Vehículo licencia C1">
+
+            <div class="linea"></div>
+
+            <p>
+                Permite conducir automóviles, camperos,
+                camionetas y microbuses de servicio público.
+            </p>
+ <div class="licencias-whatsapp">
+    <a href="https://wa.me/573224279071" target="_blank">
+        💬 Consultar por WhatsApp
+    </a>
+</div>
+        </div>
+
+    </div>
+
+</section>
+<!-- ¿POR QUÉ ELEGIRNOS? -->
+
+<section class="porque-elegirnos" id="elegirnos">
+
+    <div class="porque-contenedor">
+
+        <!-- COLUMNA IZQUIERDA -->
+
+        <div class="porque-izquierda">
+
+            <h2>
+                ¿Por qué <span>empezar con nosotros?</span>
+            </h2>
+
+            <div class="beneficios">
+
+                <!-- BENEFICIO 1 -->
+                <div class="beneficio">
+                    <div class="beneficio-icono">★</div>
+                    <p>
+                        ¡Inicia tus<br>
+                        clases de inmediato!
+                    </p>
+                </div>
+
+                <!-- BENEFICIO 2 -->
+                <div class="beneficio">
+                    <div class="beneficio-icono">⏳</div>
+                    <p>
+                        Más de 30<br>
+                        años de experiencia
+                    </p>
+                </div>
+
+                <!-- BENEFICIO 3 -->
+                <div class="beneficio">
+                    <div class="beneficio-icono">🚗</div>
+                    <p>
+                        Vehículos en<br>
+                        óptimas condiciones
+                    </p>
+                </div>
+
+                <!-- BENEFICIO 4 -->
+                <div class="beneficio">
+                    <div class="beneficio-icono">✓</div>
+                    <p>
+                        Acreditados<br>
+                        y certificados
+                    </p>
+                </div>
+
+                <!-- BENEFICIO 5 -->
+                <div class="beneficio">
+                    <div class="beneficio-icono">🏆</div>
+                    <p>
+                        Formación<br>
+                        de calidad
+                    </p>
+                </div>
+
+                <!-- BENEFICIO 6 -->
+                <div class="beneficio">
+                    <div class="beneficio-icono">♟</div>
+                    <p>
+                        Equipo capacitado<br>
+                        y paciente
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COLUMNA DERECHA -->
+
+        <div class="porque-derecha">
+
+            <img src="ceaimg.png" 
+                 alt="CEA Colombiana Dosquebradas">
+
+        </div>
+
+    </div>
+
+</section>
+	<!-- =========================================================
+     SERVICIOS COMPLEMENTARIOS
+     ========================================================= -->
+
+<section class="servicios-complementarios">
+
+    <!-- ENCABEZADO -->
+    <div class="sc-header">
+
+        <div class="sc-titulo">
+            <span></span>
+            <h2>
+                <strong>SERVICIOS</strong>
+                <b>COMPLEMENTARIOS</b>
+            </h2>
+            <span></span>
+        </div>
+
+        <p>
+            Servicios aliados que te brindan orientación y respaldo
+            en situaciones importantes.
+        </p>
+
+        <!-- LOGO -->
+        <img src="logo.png" alt="CEA Colombiana Dosquebradas" class="sc-logo">
+
+    </div>
+
+
+    <!-- TARJETAS PRINCIPALES -->
+    <div class="sc-contenedor">
+
+
+        <!-- =====================================================
+             TARJETA IZQUIERDA
+             ===================================================== -->
+        <div class="sc-card sc-card-blanca">
+
+            <div class="sc-etiqueta">
+                BENEFICIO PARA NUESTROS ESTUDIANTES
+            </div>
+
+            <div class="sc-card-contenido">
+
+                <!-- IMAGEN -->
+                <div class="sc-imagen-izquierda">
+                    <img src="orientacion-juridica.png"
+                         alt="Orientación jurídica">
+                </div>
+
+                <!-- TEXTO -->
+                <div class="sc-texto">
+
+                    <h3>
+                        TRES MESES DE
+                        <span>ORIENTACIÓN JURÍDICA INICIAL</span>
+                    </h3>
+
+                    <p>
+                        Al realizar tu curso con CEA Colombiana Dosquebradas,
+                        recibes tres meses de orientación jurídica inicial
+                        en temas relacionados con accidentes de tránsito.
+                    </p>
+
+                    <ul class="sc-lista">
+
+                        <li>
+                            <span>✓</span>
+                            Orientación inicial después de un accidente.
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Información general sobre recobros SOAT.
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Revisión inicial de documentos disponibles.
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Orientación sobre incapacidades relacionadas
+                            con el accidente.
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Remisión para atención jurídica especializada.
+                        </li>
+
+                    </ul>
+
+                    <a href="https://wa.me/573017693086"
+                       target="_blank"
+                       class="sc-boton">
+
+                        <span>◉</span>
+                        Conocer mi beneficio
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="sc-nota">
+                Aplican términos y condiciones. Beneficio personal e intransferible.
+                <br>
+                No incluye representación judicial ni trámites ante aseguradoras,
+                salvo contratación independiente.
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             TARJETA DERECHA
+             ===================================================== -->
+        <div class="sc-card sc-card-negra">
+
+            <div class="sc-etiqueta">
+                SERVICIOS JURÍDICOS ESPECIALIZADOS
+            </div>
+
+            <div class="sc-juridico">
+
+                <div class="sc-juridico-texto">
+
+                    <h3>
+                        ASESORÍAS Y<br>
+                        <span>REPRESENTACIÓN JURÍDICA</span>
+                    </h3>
+
+                    <p>
+                        Contamos con un equipo de profesionales expertos
+                        en diferentes áreas del derecho, listos para ofrecerte
+                        soluciones legales efectivas y estratégicas.
+                    </p>
+
+
+                    <!-- SERVICIO 1 -->
+                    <div class="sc-servicio">
+
+                        <div class="sc-icono">🚗</div>
+
+                        <div>
+                            <strong>ACCIDENTES DE TRÁNSITO</strong>
+                            <p>
+                                Orientación y representación en accidentes,
+                                reclamaciones y procesos relacionados.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- SERVICIO 2 -->
+                    <div class="sc-servicio">
+
+                        <div class="sc-icono">📊</div>
+
+                        <div>
+                            <strong>GESTIÓN TRIBUTARIA</strong>
+                            <p>
+                                Asesoría y acompañamiento en obligaciones
+                                tributarias para personas y empresas.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- SERVICIO 3 -->
+                    <div class="sc-servicio">
+
+                        <div class="sc-icono">🏛️</div>
+
+                        <div>
+                            <strong>DERECHO ADUANERO</strong>
+                            <p>
+                                Asesoría en importaciones, exportaciones,
+                                regímenes y procedimientos aduaneros.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- SERVICIO 4 -->
+                    <div class="sc-servicio">
+
+                        <div class="sc-icono">🛡️</div>
+
+                        <div>
+                            <strong>RECOBROS SOAT</strong>
+                            <p>
+                                Acompañamiento legal para reclamaciones
+                                y recobros por pólizas SOAT.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- SERVICIO 5 -->
+                    <div class="sc-servicio">
+
+                        <div class="sc-icono">⚖️</div>
+
+                        <div>
+                            <strong>DERECHO PENAL</strong>
+                            <p>
+                                Defensa técnica y representación en
+                                procesos penales.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <a href="https://wa.me/573017693086"
+                       target="_blank"
+                       class="sc-boton-negro">
+
+                        ◉ Solicitar asesoría personalizada
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================================
+         FRANJA DE BENEFICIOS
+         ========================================================= -->
+
+    <div class="sc-beneficios">
+
+        <div class="sc-beneficio">
+            <span>♧</span>
+            <strong>
+                Acompañamiento<br>
+                cercano y humano
+            </strong>
+        </div>
+
+        <div class="sc-beneficio">
+            <span>♢</span>
+            <strong>
+                Confidencialidad<br>
+                y profesionalismo
+            </strong>
+        </div>
+
+        <div class="sc-beneficio">
+            <span>✓</span>
+            <strong>
+                Información clara<br>
+                y oportuna
+            </strong>
+        </div>
+
+        <div class="sc-beneficio">
+            <span>⚖</span>
+            <strong>
+                Respaldo de profesionales<br>
+                independientes
+            </strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<style>
+
+/* =========================================================
+   SERVICIOS COMPLEMENTARIOS
+   ========================================================= */
+
+.servicios-complementarios {
+    width: 100%;
+    background: #ffffff;
+    padding: 35px 4% 25px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+
+/* =========================================================
+   ENCABEZADO
+   ========================================================= */
+
+.sc-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.sc-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.sc-titulo span {
+    width: 135px;
+    height: 3px;
+    background: #ff5a00;
+    position: relative;
+}
+
+.sc-titulo span::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #ff5a00;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sc-titulo span:first-child::after {
+    right: -1px;
+}
+
+.sc-titulo span:last-child::after {
+    left: -1px;
+}
+
+.sc-titulo h2 {
+    margin: 0;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.sc-titulo h2 strong {
+    color: #111;
+}
+
+.sc-titulo h2 b {
+    color: #ff5a00;
+}
+
+.sc-header > p {
+    font-size: 20px;
+    margin: 10px 0 0;
+    font-weight: 600;
+    color: #333;
+}
+
+.sc-logo {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    width: 145px;
+    z-index: 5;
+}
+
+
+/* =========================================================
+   CONTENEDOR DE TARJETAS
+   ========================================================= */
+
+.sc-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1.08fr;
+    gap: 22px;
+    max-width: 1450px;
+    margin: auto;
+}
+
+
+/* =========================================================
+   TARJETAS
+   ========================================================= */
+
+.sc-card {
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 600px;
+    box-sizing: border-box;
+}
+
+.sc-card-blanca {
+    background: #fff;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 5px 20px rgba(0,0,0,.10);
+    padding: 22px;
+}
+
+.sc-card-negra {
+    position: relative;
+
+    background-image: url("asesoria-juridica.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #fff;
+    padding: 22px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.20);
+
+    overflow: hidden;
+}
+	.sc-card-negra::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    z-index: 0;
+}
+	.sc-card-negra > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* =========================================================
+   ETIQUETAS
+   ========================================================= */
+
+.sc-etiqueta {
+    display: inline-block;
+    background: #f45100;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   TARJETA IZQUIERDA
+   ========================================================= */
+
+.sc-card-contenido {
+    display: grid;
+    grid-template-columns: 34% 66%;
+    align-items: center;
+}
+
+.sc-imagen-izquierda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sc-imagen-izquierda img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+}
+
+.sc-texto {
+    padding-left: 10px;
+}
+
+.sc-texto h3 {
+    font-size: 30px;
+    line-height: 1.05;
+    margin: 0 0 15px;
+    font-weight: 900;
+}
+
+.sc-texto h3 span {
+    display: block;
+    color: #f45100;
+    margin-top: 4px;
+}
+
+.sc-texto > p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   LISTA
+   ========================================================= */
+
+.sc-lista {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.sc-lista li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.sc-lista li span {
+    min-width: 25px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f45100;
+    color: white;
+    border-radius: 50%;
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   BOTÓN NARANJA
+   ========================================================= */
+
+.sc-boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: #f45100;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 20px;
+    border-radius: 12px;
+
+    font-size: 18px;
+    font-weight: 900;
+
+    margin-top: 20px;
+
+    transition: .3s ease;
+}
+
+.sc-boton:hover {
+    transform: scale(1.03);
+    background: #ff6a00;
+}
+
+
+/* =========================================================
+   NOTA LEGAL
+   ========================================================= */
+
+.sc-nota {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TARJETA DERECHA
+   ========================================================= */
+
+.sc-juridico {
+    display: grid;
+    grid-template-columns: 63% 37%;
+    height: calc(100% - 60px);
+}
+
+.sc-juridico-texto {
+    padding-right: 15px;
+}
+
+.sc-juridico-texto h3 {
+    font-size: 30px;
+    line-height: 1.05;
+    margin: 0 0 12px;
+    font-weight: 900;
+}
+
+.sc-juridico-texto h3 span {
+    color: #ff5a00;
+}
+
+.sc-juridico-texto > p {
+    font-size: 15px;
+    line-height: 1.35;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   SERVICIOS
+   ========================================================= */
+
+.sc-servicio {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 10px;
+
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,90,0,.55);
+}
+
+.sc-icono {
+    width: 45px;
+    height: 45px;
+
+    border: 2px solid #ff5a00;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+}
+
+.sc-servicio strong {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.sc-servicio p {
+    margin: 2px 0 0;
+    font-size: 13px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   IMAGEN DERECHO
+   ========================================================= */
+
+.sc-imagen-derecho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sc-imagen-derecho img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   BOTÓN DERECHO
+   ========================================================= */
+
+.sc-boton-negro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ff5a00;
+    border: 2px solid #ff5a00;
+
+    padding: 9px 15px;
+    margin-top: 12px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 900;
+
+    transition: .3s ease;
+}
+
+.sc-boton-negro:hover {
+    background: #ff5a00;
+    color: white;
+}
+
+
+/* =========================================================
+   FRANJA DE BENEFICIOS
+   ========================================================= */
+
+.sc-beneficios {
+    max-width: 1450px;
+    margin: 18px auto 0;
+
+    background: #fff;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.10);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    padding: 17px 20px;
+}
+
+.sc-beneficio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 5px 15px;
+
+    border-right: 1px solid #ddd;
+}
+
+.sc-beneficio:last-child {
+    border-right: none;
+}
+
+.sc-beneficio span {
+    color: #f45100;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.sc-beneficio strong {
+    font-size: 15px;
+    line-height: 1.25;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .sc-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .sc-logo {
+        position: relative;
+        top: auto;
+        right: auto;
+        display: block;
+        margin: 15px auto 0;
+    }
+
+    .sc-beneficios {
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .sc-beneficio {
+        border-bottom: 1px solid #ddd;
+        padding: 15px;
+    }
+
+    .sc-beneficio:nth-child(2) {
+        border-right: none;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - CELULAR
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .servicios-complementarios {
+        padding: 25px 12px;
+    }
+
+    .sc-titulo {
+        gap: 8px;
+    }
+
+    .sc-titulo span {
+        width: 35px;
+    }
+
+    .sc-titulo h2 {
+        font-size: 25px;
+    }
+
+    .sc-header > p {
+        font-size: 15px;
+    }
+
+    .sc-logo {
+        width: 110px;
+    }
+
+    .sc-card {
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .sc-card-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .sc-imagen-izquierda {
+        margin-bottom: 15px;
+    }
+
+    .sc-imagen-izquierda img {
+        max-width: 220px;
+    }
+
+    .sc-texto {
+        padding-left: 0;
+    }
+
+    .sc-texto h3,
+    .sc-juridico-texto h3 {
+        font-size: 24px;
+    }
+
+    .sc-juridico {
+        grid-template-columns: 1fr;
+    }
+
+    .sc-imagen-derecho {
+        display: none;
+    }
+
+    .sc-beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    .sc-beneficio {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .sc-beneficio:last-child {
+        border-bottom: none;
+    }
+
+}
+
+</style>
+<!-- REDES SOCIALES -->
+
+<section class="redes">
+
+    <h2>Síguenos en nuestras <span>Redes Sociales</span></h2>
+
+    <p>Encuéntranos y conoce más sobre CEA Colombiana Dosquebradas.</p>
+
+    <div class="redes-contenedor">
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/ceacolombianadosquebradas" 
+		target="_blank" class="red instagram">
+           <img src="instagram.png" width="25" alt="Gmail">
+            <h3>Instagram</h3>
+            <p>@ceacolombianadosquebradas</p>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=61591731402113" target="_blank" class="red facebook">
+            <img src="facebook.png" width="25" alt="Gmail">
+            <h3>Facebook</h3>
+            <p>CEA Colombiana Dosquebradas</p>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@cea.colombiana.co" target="_blank" class="red tiktok">
+            <img src="tiktok.png" width="25" alt="Gmail">
+            <h3>TikTok</h3>
+            <p>@cea.colombiana.co</p>
+        </a>
+
+    </div>
+
+</section>
+
+
+<style>
+
+    .redes {
+        text-align: center;
+        padding: 60px 20px;
+        background-color: white;
+    }
+
+    .redes h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .redes h2 span {
+        color: #ff5a00;
+    }
+
+    .redes > p {
+        color: #666;
+        margin-bottom: 35px;
+    }
+
+    .redes-contenedor {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .red {
+        width: 250px;
+        padding: 25px;
+        text-decoration: none;
+        color: #222;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .red:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .red .icono {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .red h3 {
+        margin-bottom: 8px;
+    }
+
+    .red p {
+        color: #666;
+    }
+
+</style>
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+
+<a href="https://wa.me/573224279071" 
+   target="_blank" 
+   class="whatsapp-flotante">
+    <img src="whatsapp.png" alt="WhatsApp">
+</a>
+
+<style>
+    .whatsapp-flotante {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        z-index: 9999;
+        transition: 0.3s;
+    }
+
+    .whatsapp-flotante img {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+    }
+
+    .whatsapp-flotante:hover {
+        transform: scale(1.1);
+    }
+</style>
+ <!-- CONTACTO -->
+
+    <section class="contacto" id="contacto">
+
+        <div class="titulo">
+
+            <h2>
+                <span>Contáctanos</span>
+            </h2>
+
+            <p>
+                Estamos listos para ayudarte a comenzar tu proceso.
+            </p>
+
+        </div>
+
+<div class="contacto-info">
+    <p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ceacolombianadosquebradas@gmail.com" target="_blank">
+            <img src="gmail.png" width="25" alt="Gmail">
+            
+        </a>
+    </p>
+    <p>
+        📍 Dosquebradas, Risaralda, Colombia
+    </p>
+</div>
+
+        <br>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            © 2026 <span>CEA Colombiana Dosquebradas</span>.
+            Todos los derechos reservados.
+        </p>
+
+    </footer>
+	<!-- POLÍTICA DE PRIVACIDAD -->
+
+<footer>
+
+    <a href="politica-privacidad.html">
+        Política de Privacidad
+    </a>
+
+</footer>
+<!-- =========================
+     AVISO DE COOKIES
+========================= -->
+
+<div id="aviso-cookies" class="aviso-cookies">
+
+    <div class="cookies-icono">
+        🍪
+    </div>
+
+    <div class="cookies-texto">
+
+        <h3>Usamos cookies</h3>
+
+        <p>
+            Utilizamos cookies para mejorar tu experiencia
+            en nuestro sitio web, recordar tus preferencias
+            y ayudarnos a entender cómo se utiliza la página.
+        </p>
+
+        <a href="politica-privacidad.html">
+            Política de Privacidad
+        </a>
+
+    </div>
+
+    <div class="cookies-botones">
+
+        <button id="rechazar-cookies" class="btn-rechazar">
+            Rechazar
+        </button>
+
+        <button id="aceptar-cookies" class="btn-aceptar">
+            Aceptar cookies
+        </button>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    const avisoCookies = document.getElementById("aviso-cookies");
+    const aceptarCookies = document.getElementById("aceptar-cookies");
+    const rechazarCookies = document.getElementById("rechazar-cookies");
+
+
+    /* Comprobar si ya eligió */
+
+    if (!localStorage.getItem("decisionCookies")) {
+        avisoCookies.style.display = "flex";
+    }
+
+
+    /* ACEPTAR */
+
+    aceptarCookies.addEventListener("click", function () {
+
+        localStorage.setItem("decisionCookies", "aceptadas");
+
+        avisoCookies.classList.add("ocultar");
+
+        setTimeout(function () {
+            avisoCookies.style.display = "none";
+        }, 400);
+
+    });
+
+
+    /* RECHAZAR */
+
+    rechazarCookies.addEventListener("click", function () {
+
+        localStorage.setItem("decisionCookies", "rechazadas");
+
+        avisoCookies.classList.add("ocultar");
+
+        setTimeout(function () {
+            avisoCookies.style.display = "none";
+        }, 400);
+
+    });
+
+</script>
+</body>
+</html>
