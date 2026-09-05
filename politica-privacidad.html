@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Política de Privacidad | CEA Colombiana Dosquebradas</title>
+<link rel="icon" type="image/png" href="logo.png">
+    <meta name="description"
+          content="Política de Tratamiento de Datos Personales de CEA Colombiana Dosquebradas S.A.S.">
+<link rel="stylesheet" href="style.css">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           BARRA SUPERIOR
+        ========================= */
+
+        header {
+            background: #111;
+            padding: 18px 7%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo-texto {
+            color: white;
+            font-size: 21px;
+            text-decoration: none;
+        }
+
+        .logo-texto span {
+            color: #ff5a00;
+        }
+
+        nav {
+            display: flex;
+            gap: 22px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff5a00;
+        }
+
+
+        /* =========================
+           PORTADA
+        ========================= */
+
+        .portada {
+            background: #111;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .portada h1 {
+            color: white;
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .portada h1 span {
+            color: #ff5a00;
+        }
+
+        .portada p {
+            color: #ddd;
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           CONTENEDOR
+        ========================= */
+
+        .contenido {
+            max-width: 1050px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+
+        /* =========================
+           TARJETAS
+        ========================= */
+
+        .tarjeta {
+            background: white;
+
+            padding: 35px;
+
+            margin-bottom: 25px;
+
+            border-radius: 18px;
+
+            border-left: 6px solid #ff5a00;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .tarjeta h2 {
+            color: #111;
+            font-size: 25px;
+            margin-bottom: 18px;
+        }
+
+        .tarjeta h2 span {
+            color: #ff5a00;
+        }
+
+        .tarjeta p {
+            color: #444;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .tarjeta ul {
+            margin-left: 25px;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .tarjeta li {
+            margin-bottom: 7px;
+        }
+
+
+        /* =========================
+           DATOS DEL CEA
+        ========================= */
+
+        .datos-cea {
+            background: #111;
+            color: white;
+
+            padding: 30px;
+
+            border-radius: 18px;
+
+            margin-bottom: 30px;
+
+            text-align: center;
+        }
+
+        .datos-cea h2 {
+            color: #ff5a00;
+            margin-bottom: 20px;
+        }
+
+        .datos-cea p {
+            margin: 9px 0;
+            line-height: 1.5;
+        }
+
+
+        /* =========================
+           DERECHOS
+        ========================= */
+
+        .derechos {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 15px;
+
+            margin-top: 20px;
+        }
+
+        .derecho {
+            background: #f5f5f5;
+
+            padding: 18px;
+
+            border-radius: 12px;
+
+            border: 1px solid #ddd;
+        }
+
+        .derecho::before {
+            content: "✓";
+
+            display: inline-flex;
+
+            width: 30px;
+            height: 30px;
+
+            margin-right: 8px;
+
+            background: #111;
+
+            color: white;
+
+            border-radius: 50%;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        /* =========================
+           AVISO
+        ========================= */
+
+        .aviso {
+            background: #ff5a00;
+            color: white;
+
+            padding: 30px;
+
+            border-radius: 18px;
+
+            text-align: center;
+
+            margin-top: 30px;
+        }
+
+        .aviso h2 {
+            margin-bottom: 12px;
+        }
+
+        .aviso p {
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           BOTONES
+        ========================= */
+
+        .botones {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+            margin: 35px 0;
+        }
+
+        .boton {
+            background: #111;
+
+            color: white;
+
+            padding: 14px 25px;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background: #ff5a00;
+
+            transform: scale(1.06);
+        }
+
+        .boton-naranja {
+            background: #ff5a00;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #111;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 30px 20px;
+
+            margin-top: 50px;
+        }
+
+        footer span {
+            color: #ff5a00;
+        }
+
+        footer p {
+            margin: 8px;
+        }
+
+
+        /* =========================
+           CELULAR
+        ========================= */
+
+        @media (max-width: 768px) {
+
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .portada {
+                padding: 50px 15px;
+            }
+
+            .portada h1 {
+                font-size: 32px;
+            }
+
+            .contenido {
+                margin-top: 30px;
+            }
+
+            .tarjeta {
+                padding: 25px 20px;
+            }
+
+            .derechos {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+        <a href="index.html" class="logo-texto">
+            CEA <span>Colombiana Dosquebradas</span>
+        </a>
+
+        <nav>
+
+            <a href="index.html">Inicio</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         PORTADA
+    ========================= -->
+
+    <section class="portada">
+
+        <h1>
+            Política de <span>Privacidad</span>
+        </h1>
+
+        <p>
+            CEA Colombiana Dosquebradas S.A.S.
+        </p>
+
+    </section>
+
+
+    <main class="contenido">
+
+
+        <!-- DATOS DE LA EMPRESA -->
+
+        <section class="datos-cea">
+
+            <h2>CEA COLOMBIANA DOSQUEBRADAS S.A.S.</h2>
+
+            <p>NIT: 902.074.380-3</p>
+
+            <p>
+                Carrera 16 No. 32-56, local 11,
+                Centro Comercial Los Molinos,
+                Dosquebradas, Risaralda
+            </p>
+        </section>
+
+
+        <!-- RESPONSABLE -->
+
+        <section class="tarjeta">
+
+            <h2>
+                1. <span>Responsable del tratamiento</span>
+            </h2>
+
+            <p>
+                CENTRO DE ENSEÑANZA AUTOMOVILÍSTICA
+                COLOMBIANA DOSQUEBRADAS S.A.S.,
+                identificada con NIT 902.074.380-3,
+                con domicilio en Dosquebradas, Risaralda,
+                actúa como responsable del tratamiento
+                de los datos personales recolectados por
+                medio de su página web, formularios
+                institucionales, correo electrónico,
+                WhatsApp y demás canales autorizados.
+            </p>
+
+        </section>
+
+
+        <!-- OBJETO -->
+
+        <section class="tarjeta">
+
+            <h2>
+                2. <span>Objeto y alcance</span>
+            </h2>
+
+            <p>
+                Esta política establece las reglas para
+                recolectar, almacenar, usar, circular,
+                actualizar, transmitir, conservar y
+                suprimir datos personales de aspirantes,
+                estudiantes, acudientes, instructores,
+                trabajadores, contratistas, proveedores,
+                visitantes, usuarios del sitio web y
+                personas que formulen peticiones,
+                quejas o reclamos.
+            </p>
+
+        </section>
+
+
+        <!-- PRINCIPIOS -->
+
+        <section class="tarjeta">
+
+            <h2>
+                3. <span>Principios</span>
+            </h2>
+
+            <p>
+                El tratamiento de los datos se realizará
+                conforme a los principios de:
+            </p>
+
+            <ul>
+
+                <li>Legalidad.</li>
+
+                <li>Finalidad.</li>
+
+                <li>Libertad.</li>
+
+                <li>Veracidad o calidad.</li>
+
+                <li>Transparencia.</li>
+
+                <li>Seguridad.</li>
+
+                <li>Confidencialidad.</li>
+
+                <li>Necesidad y proporcionalidad.</li>
+
+                <li>Responsabilidad demostrada.</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- DATOS -->
+
+        <section class="tarjeta">
+
+            <h2>
+                4. <span>Datos que pueden recolectarse</span>
+            </h2>
+
+            <ul>
+
+                <li>
+                    Nombre, tipo y número de documento,
+                    teléfono y correo.
+                </li>
+
+                <li>
+                    Municipio y dirección cuando sea necesaria.
+                </li>
+
+                <li>
+                    Categoría de licencia y tipo de solicitud.
+                </li>
+
+                <li>
+                    Disponibilidad horaria.
+                </li>
+
+                <li>
+                    Datos del acudiente cuando corresponda.
+                </li>
+
+                <li>
+                    Información académica y contractual
+                    cuando se formalice una matrícula.
+                </li>
+
+                <li>
+                    Datos técnicos del sitio web,
+                    según su configuración.
+                </li>
+
+                <li>
+                    Datos suministrados en PQR,
+                    encuestas, testimonios o solicitudes
+                    de empleo.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- FINALIDADES -->
+
+        <section class="tarjeta">
+
+            <h2>
+                5. <span>Finalidades</span>
+            </h2>
+
+            <p>
+                Los datos podrán utilizarse para:
+            </p>
+
+            <ul>
+
+                <li>
+                    Atender solicitudes de información,
+                    cotización, contacto y preinscripción.
+                </li>
+
+                <li>
+                    Informar requisitos, categorías,
+                    horarios y disponibilidad.
+                </li>
+
+                <li>
+                    Contactar al titular por los canales
+                    autorizados.
+                </li>
+
+                <li>
+                    Gestionar peticiones, quejas,
+                    reclamos y solicitudes.
+                </li>
+
+                <li>
+                    Verificar identidad y prevenir fraude
+                    cuando sea necesario.
+                </li>
+
+                <li>
+                    Mantener la seguridad y trazabilidad
+                    de los canales digitales.
+                </li>
+
+                <li>
+                    Cumplir deberes legales y regulatorios.
+                </li>
+
+                <li>
+                    Elaborar estadísticas y análisis internos.
+                </li>
+
+                <li>
+                    Enviar publicidad o promociones únicamente
+                    cuando exista autorización previa,
+                    expresa e independiente.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- DATOS SENSIBLES -->
+
+        <section class="tarjeta">
+
+            <h2>
+                6. <span>Datos sensibles y de menores</span>
+            </h2>
+
+            <p>
+                El CEA no solicitará datos sensibles a través
+                del formulario público de contacto, salvo
+                necesidad legal, finalidad legítima y
+                autorización expresa.
+            </p>
+
+            <p>
+                Los datos de niñas, niños y adolescentes
+                recibirán protección reforzada y serán tratados
+                respetando su interés superior y sus derechos
+                prevalentes.
+            </p>
+
+        </section>
+
+
+        <!-- DERECHOS -->
+
+        <section class="tarjeta">
+
+            <h2>
+                7. <span>Derechos de los titulares</span>
+            </h2>
+
+            <div class="derechos">
+
+                <div class="derecho">
+                    Conocer y actualizar sus datos.
+                </div>
+
+                <div class="derecho">
+                    Rectificar información incorrecta.
+                </div>
+
+                <div class="derecho">
+                    Solicitar prueba de la autorización.
+                </div>
+
+                <div class="derecho">
+                    Ser informado sobre el uso de sus datos.
+                </div>
+
+                <div class="derecho">
+                    Revocar la autorización cuando proceda.
+                </div>
+
+                <div class="derecho">
+                    Solicitar la supresión cuando sea procedente.
+                </div>
+
+                <div class="derecho">
+                    Acceder gratuitamente a sus datos.
+                </div>
+
+                <div class="derecho">
+                    Presentar quejas ante la autoridad competente
+                    cuando corresponda.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONSULTAS -->
+
+        <section class="tarjeta">
+
+            <h2>
+                8. <span>Consultas y reclamos</span>
+            </h2>
+
+            <p>
+                El titular podrá presentar su solicitud
+                mediante el correo:
+            </p>
+
+            <p>
+                📧 ceacolombianadosquebradas@gmail.com
+            </p>
+
+            <p>
+                La solicitud debe indicar nombre,
+                identificación, descripción de la solicitud,
+                dirección de respuesta y documentos de soporte.
+            </p>
+
+        </section>
+
+
+        <!-- SEGURIDAD -->
+
+        <section class="tarjeta">
+
+            <h2>
+                9. <span>Seguridad y conservación</span>
+            </h2>
+
+            <p>
+                El CEA aplicará medidas administrativas,
+                técnicas y humanas razonables para proteger
+                la información, incluyendo controles de acceso,
+                contraseñas robustas, copias de seguridad,
+                actualización de sistemas y control de
+                proveedores.
+            </p>
+
+            <p>
+                Los datos serán conservados durante el tiempo
+                necesario para las finalidades autorizadas
+                y los plazos legales correspondientes.
+            </p>
+
+        </section>
+
+
+        <!-- AVISO -->
+
+        <section class="aviso">
+
+            <h2>
+                Tu privacidad es importante
+            </h2>
+
+            <p>
+                En CEA Colombiana Dosquebradas estamos
+                comprometidos con el manejo responsable
+                de la información personal.
+            </p>
+
+        </section>
+
+
+        <!-- BOTONES -->
+
+        <div class="botones">
+
+            <a href="index.html" class="boton">
+                ← Volver al inicio
+            </a>
+
+            <a href="mailto:ceacolombianadosquebradas@gmail.com"
+               class="boton boton-naranja">
+                Contactarnos
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 CEA
+            <span>Colombiana Dosquebradas</span>
+        </p>
+
+        <p>
+            Política de Tratamiento de Datos Personales
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
