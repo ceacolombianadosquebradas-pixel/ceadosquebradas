@@ -1,359 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>CEA Colombiana Dosquebradas | Escuela de Conducción</title>
-
-    <meta name="description"
-        content="CEA Colombiana Dosquebradas. Escuela de conducción para formación en licencias A2, B1 y C1. Aprende a conducir con confianza.">
-
-    <link rel="icon" type="image/png" href="logo.png">
-
-    <meta name="robots" content="index, follow">
-
-    <!-- URL PRINCIPAL DE LA PÁGINA -->
-    <link rel="canonical"
-        href="https://ceacolombianadosquebradas-pixel.github.io/">
-
-    <!-- NOMBRE DEL SITIO PARA GOOGLE -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "CEA Colombiana Dosquebradas",
-        "alternateName": "CEA Colombiana",
-        "url": "https://ceacolombianadosquebradas-pixel.github.io/"
-    }
-    </script>
-    <style>
-body * {
-    font-weight: bold;
-}
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body {
-            background-color: #f5f5f5;
-            color: #222;
-        }
-
-        /* BARRA DE NAVEGACIÓN */
-
-        header {
-            background-color: #111;
-            height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 7%;
-            z-index: 100;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            width: 120px;
-            height: 120px;
-            object-fit: contain;
-        }
-
-        .nombre {
-            color: white;
-            margin-left: 12px;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .nombre span {
-            color: #ff5a00;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #ff5a00;
-        }
-
-        /* INICIO */
-
-        .inicio {
-    min-height: 600px;
-
-    background: linear-gradient(
-        rgba(0,0,0,0.70),
-        rgba(0,0,0,0.70)
-    ),
-    url("fondoCEA.png");
-
-    background-size: cover;
-    background-position: center;
-}
-            padding: 40px 20px;
-        }
-
-        .inicio-contenido {
-            color: white;
-            max-width: 800px;
-        }
-.inicio h1 {
-    color: white;
-    font-size: 55px;
-    margin-bottom: 15px;
-}
-
-.inicio h1 span {
-    color: #ff5a00;
-}
-
-.inicio p {
-    color: white;
-    font-size: 21px;
-    margin-bottom: 30px;
-}
-        .boton {
-            display: inline-block;
-            background-color: #ff5a00;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .boton:hover {
-            background-color: #e64d00;
-            transform: scale(1.05);
-        }
-
-        /* SECCIONES */
-
-        section {
-            padding: 70px 8%;
-        }
-
-        .titulo {
-            text-align: center;
-            margin-bottom: 45px;
-        }
-
-        .titulo h2 {
-            font-size: 35px;
-            color: #111;
-        }
-
-        .titulo h2 span {
-            color: #ff5a00;
-        }
-
-        .titulo p {
-            margin-top: 10px;
-            color: #666;
-        }
-
-        /* NOSOTROS */
-
-        .nosotros {
-            background-color: white;
-        }
-
-        .nosotros-contenido {
-            display: flex;
-            gap: 50px;
-            align-items: center;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .nosotros-texto {
-            flex: 1;
-        }
-
-        .nosotros-texto h3 {
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-
-        .nosotros-texto p {
-            color: #555;
-            line-height: 1.7;
-            margin-bottom: 15px;
-        }
-
-        .nosotros-logo {
-            flex: 1;
-            text-align: center;
-        }
-
-   .nosotros-logo img {
-    width: 500px;
-    border-radius: 20px;
-}
-.titulo-cea {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.titulo-cea span {
-    display: inline-block;
-    padding: 5px 10px;
-}
-
-/* CEA EN BLANCO SOBRE FONDO NEGRO */
-.cea-blanco {
-    color: white;
-    background-color: #111;
-}
-
-/* COLOMBIANA EN NARANJA */
-.cea-naranja {
-    color: #ff5a00;
-}
-
-/* DOSQUEBRADAS EN NEGRO */
-.cea-negro {
-    color: #111;
-}
-
-        /* SERVICIOS */
-
-        .servicios {
-            background-color: #f5f5f5;
-        }
-
-        .tarjetas {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-
-        .tarjeta {
-            background-color: white;
-            width: 300px;
-            padding: 35px 25px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
-            transition: 0.3s;
-        }
-
-        .tarjeta:hover {
-            transform: translateY(-8px);
-        }
-
-        .icono {
-            font-size: 45px;
-            margin-bottom: 15px;
-        }
-
-        .tarjeta h3 {
-            margin-bottom: 12px;
-            color: #111;
-        }
-
-        .tarjeta p {
-            color: #666;
-            line-height: 1.5;
-        }
-
-        /* CONTACTO */
-
-        .contacto {
-            background-color: #111;
-            color: white;
-            text-align: center;
-        }
-
-        .contacto .titulo h2 {
-            color: white;
-        }
-
-        .contacto p {
-            margin: 12px;
-            font-size: 18px;
-        }
-
-        .contacto-info {
-            margin-top: 30px;
-        }
-
-        /* FOOTER */
-
-        footer {
-            background-color: #050505;
-            color: #aaa;
-            text-align: center;
-            padding: 25px;
-        }
-
-        footer span {
-            color: #ff5a00;
-        }
-
-        /* CELULARES */
-
-        @media (max-width: 768px) {
-
-            header {
-                height: auto;
-                padding: 15px;
-                flex-direction: column;
-            }
-
-            nav {
-                margin-top: 15px;
-            }
-
-            nav a {
-                margin: 5px;
-                font-size: 14px;
-            }
-
-            .inicio h1 {
-                font-size: 38px;
-            }
-
-            .inicio p {
-                font-size: 17px;
-            }
-
-            .nosotros-contenido {
-                flex-direction: column;
-            }
-        }
-/* =========================
-   LICENCIAS
-========================= */
-
-.licencias {
-    background-color: #f5f5f5;
-    padding: 70px 5%;
-    text-align: center;
-}
-
-.titulo-licencias h2 {
-    font-size: 35px;
-    color: #111;
-    margin-bottom: 40px;
 }
 
 .licencias-contenedor {
@@ -574,218 +218,6 @@ body * {
 
     .porque-derecha img {
         height: 400px;
-    }
-
-}
-/* =========================
-   COSTOS / PLANES
-========================= */
-
-.costos {
-    background-color: #f5f5f5;
-    padding: 70px 5%;
-}
-
-.costos-contenedor {
-    max-width: 1050px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.10);
-    text-align: center;
-}
-
-
-/* TITULO */
-
-.costos-titulo {
-    background-color: #111;
-    color: white;
-    padding: 18px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-}
-
-.costos-titulo h2 {
-    margin: 0;
-    font-size: 27px;
-}
-
-
-/* NOMBRE */
-
-.costos-contenedor > h3 {
-    color: #ff5a00;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.costos-intro {
-    max-width: 700px;
-    margin: 0 auto 35px;
-    color: #555;
-    font-size: 17px;
-    line-height: 1.6;
-}
-
-
-/* OPCIONES */
-
-.opciones-costos {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.opcion-costo {
-    width: 260px;
-    padding: 28px 20px;
-    background-color: #f7f7f7;
-    border-radius: 16px;
-    transition: 0.3s;
-}
-
-.opcion-costo:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-}
-
-.opcion-costo.destacado {
-    border: 2px solid #ff5a00;
-}
-
-
-/* ICONO */
-
-.opcion-icono {
-    width: 65px;
-    height: 65px;
-    margin: 0 auto 15px;
-
-    background-color: #111;
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 30px;
-}
-
-
-/* TITULO CATEGORIA */
-
-.opcion-costo h4 {
-    color: #ff5a00;
-    font-size: 27px;
-    margin: 10px 0;
-}
-
-.opcion-costo p {
-    color: #555;
-    font-size: 15px;
-    line-height: 1.5;
-    min-height: 70px;
-}
-
-
-/* BOTON */
-
-.opcion-costo a {
-    display: inline-block;
-    background-color: #ff5a00;
-    color: white;
-
-    padding: 10px 18px;
-    border-radius: 25px;
-
-    text-decoration: none;
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.opcion-costo a:hover {
-    background-color: #111;
-    transform: scale(1.05);
-}
-
-
-/* MENSAJE FINAL */
-
-.mensaje-costos {
-    margin-top: 40px;
-    padding: 25px;
-    background-color: #111;
-    color: white;
-    border-radius: 15px;
-}
-
-.mensaje-costos h3 {
-    color: #ff5a00;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.mensaje-costos p {
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-.mensaje-costos a {
-    display: inline-block;
-    background-color: #ff5a00;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.mensaje-costos a:hover {
-    transform: scale(1.08);
-}
-
-
-/* FRASE */
-
-.frase-costos {
-    margin-top: 30px;
-}
-
-.frase-costos h3 {
-    color: #111;
-    margin-bottom: 5px;
-}
-
-.frase-costos p {
-    color: #666;
-    font-style: italic;
-}
-
-
-/* CELULAR */
-
-@media (max-width: 768px) {
-
-    .costos {
-        padding: 40px 15px;
-    }
-
-    .costos-contenedor {
-        padding: 25px 15px;
-    }
-
-    .opciones-costos {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .opcion-costo {
-        width: 90%;
-        max-width: 320px;
     }
 
 }
@@ -1206,6 +638,125 @@ body * {
     }
 
 }
+            /* BARRA SUPERIOR DE ANUNCIO CON BOTÓN VERDE */
+        .barra-superior {
+            background-color: #111111; /* Fondo negro elegante */
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 2000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .btn-top-wsp {
+            background-color: #25D366; /* Verde oficial de WhatsApp */
+            color: white;
+            text-decoration: none;
+            padding: 6px 16px;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .btn-top-wsp:hover {
+            background-color: #128C7E; /* Verde más oscuro al pasar el mouse */
+            transform: scale(1.05); /* Efecto de crecimiento interactivo */
+        }
+        /* SECCIÓN LICENCIAS */
+        .seccion-licencias {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .seccion-licencias h2 {
+            font-size: 2rem;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .seccion-licencias h2 span {
+            color: #FF6600;
+        }
+        .grid-licencias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+        .tarjeta-licencia {
+            background: #ffffff;
+            border: 2px solid #e0e0e0;
+            padding: 30px 20px;
+            border-radius: 8px;
+            width: 290px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .tarjeta-licencia:hover {
+            transform: translateY(-5px);
+            border-color: #FF6600;
+        }
+        .tarjeta-licencia h3 {
+            font-size: 2.2rem;
+            color: #111111;
+            margin-bottom: 5px;
+        }
+        .tarjeta-licencia .categoria-sub {
+            color: #FF6600;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .tarjeta-licencia p {
+            font-size: 0.95rem;
+            color: #555555;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+.licencias-whatsapp {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.licencias-whatsapp p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.licencias-whatsapp a {
+    display: inline-block;
+    background-color: #ff5a00;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.licencias-whatsapp a:hover {
+    background-color: #111;
+    color: white;
+    transform: scale(1.08);
+}
+
     </style>
 </head>
 
@@ -1226,10 +777,16 @@ body * {
         </div>
 
         <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
+		    <!-- BARRA SUPERIOR DE CONTACTO INTERACTIVA -->
+    <div class="barra-superior">
+        <span> ¡Aprende a conducir con expertos!</span>
+        <a href="https://wa.me/573224279071" class="btn-top-wsp" target="_blank">
+            <!-- Usamos un ícono SVG nativo para que el logo de WhatsApp cargue al instante sin imágenes externas -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 11.966 0c3.178.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.239 3.48 8.421-.003 6.615-5.34 11.962-11.91 11.962-1.996-.001-3.959-.5-5.709-1.448L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.451 5.416 0 9.825-4.41 9.828-9.827.001-2.624-1.021-5.091-2.879-6.95-1.857-1.859-4.323-2.881-6.945-2.882-5.419 0-9.83 4.411-9.833 9.83-.001 1.637.43 3.235 1.252 4.66L1.69 21.135l4.957-1.3c1.382.753 2.877 1.319 4.322 1.319zm11.164-6.381c-.267-.134-1.582-.781-1.827-.869-.244-.09-.423-.134-.599.134-.176.268-.68.869-.834 1.047-.154.179-.308.201-.575.067-.267-.134-1.127-.415-2.148-1.326-.793-.707-1.329-1.582-1.485-1.849-.156-.268-.017-.413.117-.547.121-.121.267-.313.401-.469.134-.156.179-.268.268-.446.089-.179.045-.335-.022-.469-.067-.134-.599-1.444-.821-1.98-.216-.52-.436-.45-.599-.459-.155-.008-.334-.01-.513-.01-.179 0-.472.067-.719.335-.246.268-.94 1.183-.94 2.884 0 1.701 1.237 3.348 1.41 3.572.173.223 2.436 3.72 5.899 5.212.823.356 1.467.568 1.968.727.828.263 1.582.226 2.177.137.663-.1 1.582-.647 1.804-1.27.222-.624.222-1.161.155-1.272-.067-.113-.244-.179-.512-.313z"/></svg>
+            Contactar ahora por WhatsApp
+        </a>
+    </div>
+
         </nav>
 
     </header>
@@ -1249,10 +806,6 @@ body * {
                 Escuela de enseñanza automovilística | Licencias de conduccion y Cursos
             </p>
 
-            <a href="#contacto" class="boton">
-                Contáctanos
-            </a>
-
         </div>
 
     </section>
@@ -1262,17 +815,7 @@ body * {
 
     <section class="nosotros" id="nosotros">
 
-        <div class="titulo">
-
-            <h2>
-                Sobre <span>Nosotros</span>
-            </h2>
-
-            <p>
-                Tu camino hacia una conducción segura comienza aquí.
-            </p>
-
-        </div>
+     
 
         <div class="nosotros-contenido">
 
@@ -1284,22 +827,8 @@ body * {
 </div>
         <p>
 
-<p>¡Tu camino hacia una conducción segura comienza aquí!</p>
-Somos un Centro de Enseñanza Automovilística comprometido con formar conductores responsables, seguros y preparados para las vías.
-
-<p>* Formación de calidad</p>
-<p>* Educación vial</p>
-<p>* Seguridad y responsabilidad al conducir</p>
-<p>* Dosquebradas, Risaralda</p>
-
-<p>Aprende a conducir. Fórmate para la vida. 🏁</p>
-                </p>
-				                <p>
-                    Nuestro objetivo es brindar una formación de
-                    calidad, combinando conocimientos teóricos
-                    con práctica de conducción.
-                </p>
-            </div>
+<p><center>¡TU CAMINO HACIA UNA CONDUCCIÓN SEGURA COMIENZA AQUÍ!</center></p>
+<p><center>Somos un Centro de Enseñanza Automovilística comprometido con formar conductores responsables, seguros y preparados para las vías.</center></p>
 
             <div class="nosotros-logo">
 
@@ -1499,7 +1028,12 @@ Somos un Centro de Enseñanza Automovilística comprometido con formar conductor
                 motocarros, camperos, camionetas y microbuses
                 de servicio particular.
             </p>
+ <div class="licencias-whatsapp">
 
+    <a href="https://wa.me/573224279071" target="_blank">
+        💬 Consultar por WhatsApp
+    </a>
+</div>
         </div>
 
 
@@ -1518,7 +1052,12 @@ Somos un Centro de Enseñanza Automovilística comprometido con formar conductor
                 Permite conducir motocicletas, motociclos
                 y mototriciclos con motor mayor a 125 cc.
             </p>
+ <div class="licencias-whatsapp">
 
+    <a href="https://wa.me/573224279071" target="_blank">
+        💬 Consultar por WhatsApp
+    </a>
+</div>
         </div>
 
 
@@ -1537,7 +1076,11 @@ Somos un Centro de Enseñanza Automovilística comprometido con formar conductor
                 Permite conducir automóviles, camperos,
                 camionetas y microbuses de servicio público.
             </p>
-
+ <div class="licencias-whatsapp">
+    <a href="https://wa.me/573224279071" target="_blank">
+        💬 Consultar por WhatsApp
+    </a>
+</div>
         </div>
 
     </div>
@@ -1624,114 +1167,6 @@ Somos un Centro de Enseñanza Automovilística comprometido con formar conductor
 
             <img src="ceaimg.png" 
                  alt="CEA Colombiana Dosquebradas">
-
-        </div>
-
-    </div>
-
-</section>
-<!-- COSTOS Y PLANES -->
-
-<section class="costos" id="costos">
-
-    <div class="costos-contenedor">
-
-        <div class="costos-titulo">
-            <h2>¡Da el primer paso hacia tu licencia!</h2>
-        </div>
-
-        <h3>CEA COLOMBIANA DOSQUEBRADAS</h3>
-
-        <p class="costos-intro">
-            Tenemos opciones de formación para diferentes categorías de licencia.
-            Pregunta por nuestros planes y encuentra la opción que mejor se adapte a ti.
-        </p>
-
-
-        <div class="opciones-costos">
-
-            <!-- A2 -->
-            <div class="opcion-costo">
-
-                <div class="opcion-icono">🏍️</div>
-
-                <h4>A2</h4>
-
-                <p>
-                    Aprende a conducir moto con formación
-                    teórica y práctica.
-                </p>
-
-                <a href="https://wa.me/573224279071" target="_blank">
-                    Consultar por WhatsApp
-                </a>
-
-            </div>
-
-
-            <!-- B1 -->
-            <div class="opcion-costo destacado">
-
-                <div class="opcion-icono">🚗</div>
-
-                <h4>B1</h4>
-
-                <p>
-                    Prepárate para conducir carro
-                    de forma segura y responsable.
-                </p>
-
-                <a href="https://wa.me/573224279071" target="_blank">
-                    Consultar por WhatsApp
-                </a>
-
-            </div>
-
-
-            <!-- C1 -->
-            <div class="opcion-costo">
-
-                <div class="opcion-icono">🚐</div>
-
-                <h4>C1</h4>
-
-                <p>
-                    Fórmate para conducir vehículos
-                    de servicio público.
-                </p>
-
-                <a href="https://wa.me/573224279071" target="_blank">
-                    Consultar por WhatsApp
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="mensaje-costos">
-
-            <h3>¿Quieres conocer nuestras opciones?</h3>
-
-            <p>
-                Escríbenos y te brindaremos toda la información
-                sobre inscripción, formación y disponibilidad.
-            </p>
-
-            <a href="https://wa.me/573224279071" target="_blank">
-                💬 Hablar por WhatsApp
-            </a>
-
-        </div>
-
-
-        <div class="frase-costos">
-
-            <h3>Aprende • Conduce • Logra</h3>
-
-            <p>
-                Más que enseñarte a conducir, te enseñamos a cuidar tu vida.
-            </p>
 
         </div>
 
