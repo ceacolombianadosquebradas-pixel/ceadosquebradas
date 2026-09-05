@@ -1,0 +1,1087 @@
+
+    <style>
+body * {
+    font-weight: bold;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        /* BARRA DE NAVEGACIÓN */
+
+        header {
+            background-color: #111;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+            z-index: 100;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .nombre {
+            color: white;
+            margin-left: 12px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nombre span {
+            color: #ff5a00;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff5a00;
+        }
+
+        /* INICIO */
+
+        .inicio {
+    min-height: 600px;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.70),
+        rgba(0,0,0,0.70)
+    ),
+    url("fondoCEA.png");
+
+    background-size: cover;
+    background-position: center;
+}
+            padding: 40px 20px;
+        }
+
+        .inicio-contenido {
+            color: white;
+            max-width: 800px;
+        }
+.inicio h1 {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.inicio h1 span {
+    color: #ff5a00;
+}
+
+.inicio p {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+        .boton {
+            display: inline-block;
+            background-color: #ff5a00;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #e64d00;
+            transform: scale(1.05);
+        }
+
+        /* SECCIONES */
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .titulo h2 {
+            font-size: 35px;
+            color: #111;
+        }
+
+        .titulo h2 span {
+            color: #ff5a00;
+        }
+
+        .titulo p {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        /* NOSOTROS */
+
+        .nosotros {
+            background-color: white;
+        }
+
+        .nosotros-contenido {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .nosotros-texto {
+            flex: 1;
+        }
+
+        .nosotros-texto h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .nosotros-texto p {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .nosotros-logo {
+            flex: 1;
+            text-align: center;
+        }
+
+   .nosotros-logo img {
+    width: 500px;
+    border-radius: 20px;
+}
+.titulo-cea {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.titulo-cea span {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+/* CEA EN BLANCO SOBRE FONDO NEGRO */
+.cea-blanco {
+    color: white;
+    background-color: #111;
+}
+
+/* COLOMBIANA EN NARANJA */
+.cea-naranja {
+    color: #ff5a00;
+}
+
+/* DOSQUEBRADAS EN NEGRO */
+.cea-negro {
+    color: #111;
+}
+
+        /* SERVICIOS */
+
+        .servicios {
+            background-color: #f5f5f5;
+        }
+
+        .tarjetas {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .tarjeta {
+            background-color: white;
+            width: 300px;
+            padding: 35px 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+            transition: 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+        }
+
+        .icono {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta h3 {
+            margin-bottom: 12px;
+            color: #111;
+        }
+
+        .tarjeta p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* CONTACTO */
+
+        .contacto {
+            background-color: #111;
+            color: white;
+            text-align: center;
+        }
+
+        .contacto .titulo h2 {
+            color: white;
+        }
+
+        .contacto p {
+            margin: 12px;
+            font-size: 18px;
+        }
+
+        .contacto-info {
+            margin-top: 30px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #050505;
+            color: #aaa;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer span {
+            color: #ff5a00;
+        }
+
+        /* CELULARES */
+
+        @media (max-width: 768px) {
+
+            header {
+                height: auto;
+                padding: 15px;
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .inicio h1 {
+                font-size: 38px;
+            }
+
+            .inicio p {
+                font-size: 17px;
+            }
+
+            .nosotros-contenido {
+                flex-direction: column;
+            }
+        }
+/* =========================
+   LICENCIAS
+========================= */
+
+.licencias {
+    background-color: #f5f5f5;
+    padding: 70px 5%;
+    text-align: center;
+}
+
+.titulo-licencias h2 {
+    font-size: 35px;
+    color: #111;
+    margin-bottom: 40px;
+}
+
+.licencias-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.licencia {
+    background-color: white;
+    width: 31%;
+    min-width: 280px;
+    min-height: 500px;
+    padding: 25px 30px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.licencia:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.licencia h3 {
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.licencia h4 {
+    font-size: 25px;
+    color: #ff5a00;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.licencia img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin: 10px 0;
+}
+
+.linea {
+    width: 80%;
+    height: 2px;
+    background-color: #ff5a00;
+    margin: 15px auto 25px;
+}
+
+.licencia p {
+    color: #344054;
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* CELULARES */
+
+@media (max-width: 768px) {
+
+    .licencia {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .licencias-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+/* =================================
+   ¿POR QUÉ ELEGIRNOS?
+================================= */
+
+.porque-elegirnos {
+    background-color: #f5f5f5;
+    padding: 55px 4%;
+}
+
+.porque-contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 45px;
+}
+
+
+/* COLUMNA IZQUIERDA */
+
+.porque-izquierda {
+    width: 48%;
+}
+
+.porque-izquierda h2 {
+    font-size: 32px;
+    color: #111;
+    margin: 0 0 25px 0;
+    text-align: left;
+}
+
+.porque-izquierda h2 span {
+    color: #ff5a00;
+}
+
+
+/* BENEFICIOS */
+
+.beneficios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 45px;
+    row-gap: 28px;
+}
+
+.beneficio {
+    text-align: center;
+}
+
+.beneficio-icono {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 10px;
+
+    background-color: #111;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                background-color 0.3s ease;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.beneficio-icono:hover {
+    transform: scale(1.18);
+
+    background-color: #ff5a00;
+
+    box-shadow: 0 0 20px rgba(255, 90, 0, 0.5);
+}
+
+.beneficio p {
+    margin: 0;
+    color: #333;
+
+    font-size: 14px;
+    line-height: 1.25;
+}
+
+
+/* IMAGEN DERECHA */
+
+.porque-derecha {
+    width: 52%;
+}
+
+.porque-derecha img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    display: block;
+}
+
+
+/* =================================
+   CELULARES
+================================= */
+
+@media (max-width: 768px) {
+
+    .porque-contenedor {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .porque-izquierda,
+    .porque-derecha {
+        width: 100%;
+    }
+
+    .porque-izquierda h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .beneficios {
+        column-gap: 20px;
+        row-gap: 25px;
+    }
+
+    .porque-derecha img {
+        height: 400px;
+    }
+
+}
+/* =========================
+   AVISO DE COOKIES
+========================= */
+
+.aviso-cookies {
+    position: fixed;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 90%;
+    max-width: 950px;
+
+    background-color: #111;
+
+    color: white;
+
+    padding: 22px 25px;
+
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+
+    z-index: 9999;
+
+    border-top: 4px solid #ff5a00;
+
+    animation: aparecerCookies 0.5s ease;
+}
+
+
+/* ICONO */
+
+.cookies-icono {
+    width: 55px;
+    height: 55px;
+
+    min-width: 55px;
+
+    background-color: #ff5a00;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+}
+
+
+/* TEXTO */
+
+.cookies-texto {
+    flex: 1;
+}
+
+.cookies-texto h3 {
+    margin: 0 0 7px;
+
+    color: #ff5a00;
+
+    font-size: 20px;
+}
+
+.cookies-texto p {
+    margin: 0 0 7px;
+
+    color: #ddd;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.cookies-texto a {
+    color: white;
+
+    font-size: 13px;
+
+    text-decoration: underline;
+}
+
+.cookies-texto a:hover {
+    color: #ff5a00;
+}
+
+
+/* BOTONES */
+
+.cookies-botones {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    min-width: 160px;
+}
+
+.cookies-botones button {
+    border: none;
+
+    padding: 11px 18px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* ACEPTAR */
+
+.btn-aceptar {
+    background-color: #ff5a00;
+
+    color: white;
+}
+
+.btn-aceptar:hover {
+    background-color: white;
+
+    color: #111;
+
+    transform: scale(1.05);
+}
+
+
+/* RECHAZAR */
+
+.btn-rechazar {
+    background-color: transparent;
+
+    color: white;
+
+    border: 1px solid white !important;
+}
+
+.btn-rechazar:hover {
+    background-color: white;
+
+    color: #111;
+}
+
+
+/* ANIMACIONES */
+
+@keyframes aparecerCookies {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateX(-50%)
+            translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateX(-50%)
+            translateY(0);
+    }
+
+}
+
+
+.aviso-cookies.ocultar {
+
+    opacity: 0;
+
+    transform:
+        translateX(-50%)
+        translateY(30px);
+
+    transition: 0.4s ease;
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    .aviso-cookies {
+
+        width: 94%;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 20px;
+
+        bottom: 10px;
+    }
+
+    .cookies-botones {
+
+        width: 100%;
+
+        flex-direction: row;
+
+    }
+
+    .cookies-botones button {
+
+        flex: 1;
+
+    }
+
+}
+/* =========================
+   HORARIOS
+========================= */
+
+.horarios {
+    background-color: #f5f5f5;
+    padding: 70px 5%;
+}
+
+.horarios-contenedor {
+    max-width: 1050px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.horarios-contenedor h2 {
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.horarios-contenedor h2::after {
+    content: "";
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    background-color: #ff5a00;
+
+    margin: 12px auto 20px;
+
+    border-radius: 10px;
+}
+
+.horarios-intro {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+
+/* TARJETAS */
+
+.horarios-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.horario-tarjeta {
+    background-color: white;
+
+    width: 280px;
+
+    padding: 30px 20px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.10);
+
+    border-top: 5px solid #ff5a00;
+
+    transition: 0.3s;
+}
+
+.horario-tarjeta:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+
+/* ICONO */
+
+.horario-icono {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 15px;
+
+    background-color: #111;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+    transition: 0.3s;
+}
+
+.horario-tarjeta:hover .horario-icono {
+    background-color: #ff5a00;
+
+    transform: scale(1.12);
+}
+
+
+/* TEXTO */
+
+.horario-tarjeta h3 {
+    color: #ff5a00;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.horario-tarjeta p {
+    color: #333;
+    font-size: 16px;
+    margin: 7px 0;
+}
+
+
+/* CERRADO */
+
+.horario-tarjeta.cerrado {
+    border-top-color: #111;
+}
+
+.horario-tarjeta.cerrado h3 {
+    color: #111;
+}
+
+
+/* CONTACTO */
+
+.horarios-contacto {
+    margin-top: 40px;
+
+    background-color: #111;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    color: white;
+}
+
+.horarios-contacto p {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.horarios-contacto a {
+    display: inline-block;
+
+    background-color: #ff5a00;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+.horarios-contacto a:hover {
+    background-color: white;
+    color: #111;
+
+    transform: scale(1.06);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    .horarios {
+        padding: 50px 15px;
+    }
+
+    .horarios-contenedor h2 {
+        font-size: 27px;
+    }
+
+    .horario-tarjeta {
+        width: 100%;
+        max-width: 330px;
+    }
+
+}
+            /* BARRA SUPERIOR DE ANUNCIO CON BOTÓN VERDE */
+        .barra-superior {
+            background-color: #111111; /* Fondo negro elegante */
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 2000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .btn-top-wsp {
+            background-color: #25D366; /* Verde oficial de WhatsApp */
+            color: white;
+            text-decoration: none;
+            padding: 6px 16px;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .btn-top-wsp:hover {
+            background-color: #128C7E; /* Verde más oscuro al pasar el mouse */
+            transform: scale(1.05); /* Efecto de crecimiento interactivo */
+        }
+        /* SECCIÓN LICENCIAS */
+        .seccion-licencias {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .seccion-licencias h2 {
+            font-size: 2rem;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .seccion-licencias h2 span {
+            color: #FF6600;
+        }
+        .grid-licencias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+        .tarjeta-licencia {
+            background: #ffffff;
+            border: 2px solid #e0e0e0;
+            padding: 30px 20px;
+            border-radius: 8px;
+            width: 290px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .tarjeta-licencia:hover {
+            transform: translateY(-5px);
+            border-color: #FF6600;
+        }
+        .tarjeta-licencia h3 {
+            font-size: 2.2rem;
+            color: #111111;
+            margin-bottom: 5px;
+        }
+        .tarjeta-licencia .categoria-sub {
+            color: #FF6600;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .tarjeta-licencia p {
+            font-size: 0.95rem;
+            color: #555555;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+.licencias-whatsapp {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.licencias-whatsapp p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.licencias-whatsapp a {
+    display: inline-block;
+    background-color: #ff5a00;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.licencias-whatsapp a:hover {
+    background-color: #111;
+    color: white;
+    transform: scale(1.08);
+}
+
+    </style>
