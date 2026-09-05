@@ -1971,15 +1971,6 @@ Somos un Centro de Enseñanza Automovilística comprometido con formar conductor
 
                 </div>
 
-
-                <!-- IMAGEN DERECHO -->
-                <div class="sc-imagen-derecho">
-
-                    <img src="asesoria-juridica.png"
-                         alt="Servicios jurídicos">
-
-                </div>
-
             </div>
 
         </div>
@@ -2154,12 +2145,33 @@ Somos un Centro de Enseñanza Automovilística comprometido con formar conductor
 }
 
 .sc-card-negra {
-    background: #050505;
+    position: relative;
+
+    background-image: url("asesoria-juridica.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     color: #fff;
     padding: 22px;
-    box-shadow: 0 5px 20px rgba(0,0,0,.20);
-}
 
+    box-shadow: 0 5px 20px rgba(0,0,0,.20);
+
+    overflow: hidden;
+}
+	.sc-card-negra::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    z-index: 0;
+}
+	.sc-card-negra > * {
+    position: relative;
+    z-index: 1;
+}
 
 /* =========================================================
    ETIQUETAS
