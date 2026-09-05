@@ -356,7 +356,61 @@
             }
 
         }
+/* =========================
+   CORRECCIÓN POLÍTICA
+========================= */
 
+main.contenido {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 50px auto !important;
+    padding: 0 30px !important;
+}
+
+main.contenido .tarjeta {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 25px 0 !important;
+    padding: 35px 45px !important;
+}
+
+main.contenido .tarjeta h2 {
+    text-align: left !important;
+}
+
+main.contenido .tarjeta p {
+    text-align: justify !important;
+    width: 100% !important;
+}
+
+main.contenido .tarjeta ul {
+    width: 100% !important;
+}
+
+/* Derechos en dos columnas */
+main.contenido .derechos {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    width: 100% !important;
+}
+
+/* En celular una sola columna */
+@media (max-width: 768px) {
+
+    main.contenido {
+        padding: 0 15px !important;
+    }
+
+    main.contenido .tarjeta {
+        padding: 25px 20px !important;
+    }
+
+    main.contenido .derechos {
+        grid-template-columns: 1fr !important;
+    }
+}
     </style>
 
 </head>
